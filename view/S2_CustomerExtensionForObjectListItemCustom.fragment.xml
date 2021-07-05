@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!-- The following controls were copied from the parent view -->
+	<ObjectListItem xmlns="sap.m" id="MAIN_LIST_ITEM" type="{device&gt;/listItemType}" press="_handleItemPress" class="sapmobjectlistitem"
+		title="{parts: [{path: 'TaskTitle'}, {path: 'CustomAttributeData'}], formatter: 'cross.fnd.fiori.inbox.Conversions.formatterTaskTitle'}"
+		intro="{parts: [{path: 'TaskSupports/Release'}, {path: 'SupportsRelease'}], formatter: 'cross.fnd.fiori.inbox.Conversions.formatterStatusForReserved'}"
+		number="{path: 'CustomAttributeData', formatter:'cross.fnd.fiori.inbox.Conversions.formatterCustomNumberValue'}"
+		numberUnit="{path: 'CustomAttributeData', formatter:'cross.fnd.fiori.inbox.Conversions.formatterCustomNumberUnitValue'}">
+		<attributes>
+			<!--<ObjectAttribute id="ATTR1" text="{CreatedByName}"/>-->
+			<!--<ObjectAttribute id="ATTR7" text="Status: {Zbudgetstatus}" />-->
+			<ObjectAttribute id="ATTR8" text="Total: {Ztotalprvalue}"/>
+			<ObjectAttribute id="ATTR9" text="PR Type: {path: 'Zbudgetstatus', formatter: '.setPRTypeText'}"/>
+			<ObjectAttribute id="ATTR10" text="Created By: {path: 'Zbudgetstatus', formatter: '.setCreatedByTextText'}"/>
+			<!--<ObjectAttribute id="ATTR2"-->
+			<!--	text="{parts: [{path: 'CompletionDeadLine'}, {path: 'IsOverdue'}], formatter:'cross.fnd.fiori.inbox.Conversions.formatterDueDate'}"/>-->
+			<!--<ObjectAttribute id="ATTR3" text="{path: 'SubstitutedUserName', formatter:'cross.fnd.fiori.inbox.Conversions.formatterSubstitutedText'}"/>-->
+			<!--<ObjectAttribute id="ATTR4"-->
+			<!--	text="{parts: [{path: 'CompletedOn'}, {path: 'Status'}], formatter:'cross.fnd.fiori.inbox.Conversions.formatterCompletedDate'}"/>-->
+			<!--<ObjectAttribute id="ATTR5"-->
+			<!--	text="{parts: [{path: 'ResumeOn'}, {path: 'Status'}], formatter:'cross.fnd.fiori.inbox.Conversions.formatterResumeOnText'}"/>-->
+			<!--<ObjectAttribute id="ATTR6"-->
+			<!--	text="{parts: [{path: 'CustomAttributeData'}, {path: 'taskDefinitionsModel&gt;/'}], formatter: 'cross.fnd.fiori.inbox.Conversions.formatterListCustomObjectAttributeValue'}"/>-->
+		</attributes>
+		<firstStatus>
+			<!--<ObjectStatus id="STAT1"-->
+			<!--	text="{parts: [{path: 'SAP__Origin'}, {path: 'Priority'}], formatter:'cross.fnd.fiori.inbox.Conversions.formatterPriority'}"-->
+			<!--	state="{path: 'Priority', formatter:'cross.fnd.fiori.inbox.Conversions.formatterPriorityState'}"></ObjectStatus>-->
+			<ObjectStatus id="STAT3" state="{path: 'Zbudgetstatus', formatter: '.setBudgetStatus'}"
+				text="{path: 'Zbudgetstatus', formatter: '.setBudgetStatusText'}"></ObjectStatus>
+		</firstStatus>
+		<secondStatus>
+			<ObjectStatus id="STAT4" text="{path: 'Zbudgetstatus', formatter: '.setPrTypeststusText'}"></ObjectStatus>
+			
+		</secondStatus>
+	</ObjectListItem>
+</core:FragmentDefinition>

@@ -1,0 +1,88 @@
+{
+  "welcomeFile": "/index.html",
+  "routes": [
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "DEV_GW_SMR",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "DEV_GW_SMR"
+    },
+    {
+      "path": "/sap/bc/ui5_ui5",
+      "target": {
+        "type": "destination",
+        "name": "DEV_GW_SMR",
+        "entryPath": "/sap/bc/ui5_ui5"
+      },
+      "description": "DEV_GW_SMR"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/dist/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/dist/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/resources/cross/fnd/fiori/inbox",
+      "target": {
+        "type": "destination",
+        "name": "DEV_GW_SMR",
+        "entryPath": "/sap/bc/ui5_ui5/sap/ca_fiori_inbox",
+        "preferLocal": true
+      },
+      "description": "cross/fnd/fiori/inbox Reuse Library"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}
